@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+
+li, a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sign button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 5%;
+    background-color: #042212;
+
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #aa9555;
+}
+
+/* FOR FUTURE REFERENCE IF HAVE SAME ID LIKE <button> USE CLASSNAME EXAMPLE (sign) TO SPECIFY AN ATTRIBUTE TO THE SAME ID NAME WITH OUT CHANGING THE OTHER BUTTON FUNCTION */
+
+.sign button {
+    padding: 9px 25px;
+    background-color: #197a46;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    /* transition: all 0.5s ease 0s; */
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.sign button:hover {
+    background-color: #b99b40ee;
+    transform: scale(0.9);
+ }
+
+
+
+li, a, ul{
+    background-color: #042212;
+}
+
+.logo {
+    height: 5%;
+    width: 10%;
+    margin: 0;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.199),rgba(0, 0, 0, 0.199)), url(../images/shopbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/shopbg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #f7cc4b3d;
+    border-radius: 30px;
+}
+  
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #197a46, #00ff80 );
+    border-radius: 30px;
+    transition: .5s;
+}
+
+
+.socials {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.socials img {
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #197a46, #00ff80 );
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check-box {
+    margin: 30px 10px 30px 0;
+
+}
+
+span {
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+
+.toggle-btn:hover {
+    color: rgb(250, 135, 4);
+}
+
+.submit-btn:hover {
+    color: rgb(250, 135, 4);
+}
+
+#login {
+    left: 50px;
+
+}
+
+#register {
+    left: 450px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1px 2%;
+    }
+
+    .nav_links li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .sign {
+        margin-top: 10px;
+    }
+}
